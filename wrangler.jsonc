@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "reorder-desk",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "durable_objects": {
+    "bindings": [{ "name": "DEPOT", "class_name": "Depot" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Depot"] }],
+  "vars": {
+    "PUBLIC_BASE_URL": "https://reorder-desk.ogbondachiziaruhoma.workers.dev"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "reorder-desk",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nkem, the Emmaco Ventures reorder desk: a Cloudflare Worker exposing MCP tools to a Chord teammate",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler deploy",
+    "demo": "bash scripts/demo.sh",
+    "tail": "wrangler tail",
+    "typecheck": "tsc -p . && tsc -p scripts",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.3.1",
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.148.0"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.9.1",
+    "@logtape/hono": "^2.4.0",
+    "@logtape/logtape": "^2.4.0",
+    "@modelcontextprotocol/server": "^2.3.1",
+    "hono": "^4.13.13",
+    "zod": "^4.6.5"
+  },
+  "packageManager": "bun@1.4.3"
+}
