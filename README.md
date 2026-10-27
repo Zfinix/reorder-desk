@@ -185,7 +185,6 @@ reasoning is in [REFERENCE.md](REFERENCE.md).
 │   ├── README.md          wiring it into Chord, endpoint checks
 │   └── provision.sh       registers the MCP server and pins the teammate
 ├── docs/
-│   ├── DEMO.md            run sheet for the recording
 │   ├── FIELD-NOTES.md     problems hit while deploying, and the fixes
 │   └── GO-LIVE.md         go-live note for the business owner
 ├── scripts/
